@@ -1,0 +1,59 @@
+// Jogo do James (Salada de fruta)
+
+#include <stdio.h>
+
+int main()
+{
+    char escolha;
+    char escolha2;
+    
+    printf("BEM-VINDO AO JOGO DO JAMES!\n");
+    printf("\n\nINÍCIO DO JOGO:\n");
+    printf("\nJAMES ESTA PASSANDO DE BICICLETA NA RUA, CARREGANDO SUAS SALADAS DE FRUTA");
+    printf("\n\n*VOCÊ VAI CHAMAR O JAMES?");
+    printf("\n--> S (sim) / N (não)\n");
+    scanf(" %c", &escolha);
+    
+    switch (escolha){
+        case 'S':
+        printf("\nVOCÊ: ÔÔ JAMES, EU QUERO UMA SALADA DE FRUTA");
+        printf("\nJAMES: (DERRAPANDO A BICLICETA E EQUILIBRANDO TODAS AS SALADAS DE FRUTA)");
+        printf("\nVOCÊ: OLHA Q HABILIDADEEE, OLHA Q HABILIDADEEE");
+        printf("\nJAMES: (DANDO UM DRIFT E CHEGANDO PERTO DE VOCÊ");
+        printf("\nVOCÊ: EU QUERO UMA SALADA DE FRUTA, JAMES, NO CAPRICHO...");
+        printf("\nJAMES: DE 5, DE 7, DE 10...");
+        printf("\n\nFAÇA SEU PEDIDO:");
+        printf("\n1 - Para salada de frutas de 5 reais");
+        printf("\n2 - Para salada de frutas de 7 reais");
+        printf("\n3 - Para salada de frutas de 10 reais\n");
+        scanf(" %c", &escolha2);
+        
+        switch (escolha2){
+            case '1':
+            printf("\nVOCÊ: ME DA UMA DE 5");
+            printf("\nJAMES: AQUI TA NA MÃO! TA AQUII...");
+            printf("\nVOCÊ: ISSO JAMES, MUITO OBRIGADO!");
+            printf("\nJAMES: OBRIGADO!!");
+            printf("\nVOCÊ: DEUS ABENÇOE.. ESSE É O JAMES....HÃ?!?!?!... O DA SALADA DE FRUTA, O ARTISTA DE CIRCO...");
+            printf("\n\nPARABÉNS MEU NOBRE! VOCÊ ZEROU O JOGO E DEIXOU O JAMES FELIZ!");
+            break;
+            
+            case '2':
+            printf("INFELIZMENTE VOCÊ FEZ A ESCOLHA ERRADA, AMIGO...\n");
+            printf("GAME OVER !!");
+            break;
+            
+            case '3':
+            printf("INFELIZMENTE VOCÊ FEZ A ESCOLHA ERRADA, AMIGO...\n");
+            printf("GAME OVER !!");
+            break;
+        }
+        break;
+        case 'N':
+        printf("INFELIZMENTE VOCÊ FEZ A ESCOLHA ERRADA, AMIGO...\n");
+        printf("GAME OVER !!");
+        break;
+    }
+
+    return 0;
+}
